@@ -1,0 +1,26 @@
+﻿Language:Java
+Type of Framework:Data Drivem Framework by usibg Page Object Model design pattern with page factory
+Packages:
+1)Pages package:web related classes
+2)Tests package:tests related classes
+
+Test base class:deals with all the common functions used by all pages
+(TestBase.java)
+
+Utility Class:store and handles all functions(repetive code stored in this class)
+(TestUtil.java)
+
+Properties File:Store the information that remains static throughout the framework(browser specific information,application url,screenshot path etc.)
+Screenshots:screenshots will be captured and stored in a seperate folder and also the screenshots of a failed test cases will be added in the extent report.
+
+TestData:All the historical data will be kept in excel sheet(controller.xlsx).By using this sheet,we pass test data and handle data driven testing.
+
+TestNG:By this folder,we handle Assertion,Grouping and Parallel execution.
+
+Maven:Using maven for build ,execution and dependency purpose.Intergarting the TestNG dependency in POM.xml file and running this POM.xml file using Jenkins.
+
+Version Control Tool:we use git repository to store our test scripts.
+Extent Reports:For the reporting purpose,we are using Extent report.It genetaes beautiful HTML reports.
+(use for maintaining logs and also to include screenshots of failed test cases)
+
+
